@@ -1,4 +1,4 @@
-# Estruturas de dados
+ # Estruturas de dados
 
 
 
@@ -6,20 +6,12 @@
   <img alt="IBIMIRIM" src="https://i0.wp.com/www.luisdev.com.br/wp-content/uploads/2021/04/ESTRUTURA-DE-DADOS-COM-C.png?w=744&ssl=1" width="80%">
 </p>
 
-A Lei de Demeter: Há uma heurística muito conhecida chamada Lei de Demeter: um módulo não deve enxergar o interior dos objetos que ele manipula. Como vimos na seção anterior, os objetos escondem seus dados e expõem as operações. Isso significa que um objeto não deve expor sua estrutura interna por meio dos métodos assessores, pois isso seria expor, e não ocultar, sua estrutura interna.
+*OBS: Repositório destinado aos exercícios da faculdade*
 
-► C
-
-► Um objeto criado por f
-
-► Um objeto passado como parâmetro para f
-
-► um objeto dentro de uma variável de instância C
-
-O método não deve chamar os métodos em objetos retornados por qualquer outras das funções permitidas. Em outras palavra, fale apenas com conhecidos, não com estranhos.
-
-O código seguinte parece violar a Lei de Demeter (dentre outras coisas), pois ele chama a função getScratchDir() no valor retornado de getOptions() e, então, chama getAbsolutePath() no valor retornado de getScratchDir().
-
-​	final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
+  *O código procedural (usado em estruturas de dados) facilita a adição de novas funções sem precisar alterar as estruturas de dados existentes. O código orientado a objetos (OO), por outro lado, facilita a adição de novas classes sem precisar alterar as funções existentes*
+  
+  O inverso também é verdade:
+  
+  *O código procedural dificulta a adição de novas estruturas de dados, pois todas as funções teriam de ser alteradas. O código OO dificulta a adição de novas funções pois todas as classes teriam de ser alteradas.*
 
 *código limpo Habilidades Práticas do Agile Software*
