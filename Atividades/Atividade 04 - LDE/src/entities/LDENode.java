@@ -1,13 +1,13 @@
 package entities;
 
-public class LDENode<T extends Comparable<T>> {
-	
+public class LDENode <T extends Comparable<T>>{
+
 	private T informacao;
 	private LDENode<T> proximo;
 	private LDENode<T> anterior;
 	
-	LDENode(T valor) {
-		informacao = valor;
+	LDENode(T info) {
+		informacao = info; 
 	}
 	
 	T getInformacao() {
@@ -19,18 +19,18 @@ public class LDENode<T extends Comparable<T>> {
 	}
 	
 	LDENode<T> getProximo() {
-		return proximo;
+		return this.proximo;
 	}
 	
-	void setProximo(LDENode<T> novo) {
-		proximo = novo;
+	void setProximo(LDENode<T> valor) {
+		proximo = valor;
 	}
 	
 	LDENode<T> getAnterior() {
 		return anterior;
 	}
 	
-	void setAnterior(LDENode<T> novo) {
-		anterior = novo;
+	void setAnterior(LDENode<T> valor) {
+		anterior = valor;
 	}
 }
